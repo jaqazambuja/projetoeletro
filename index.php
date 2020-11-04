@@ -1,3 +1,19 @@
+<?php
+
+$servername = "Localhost";
+$username   = "root";
+$password   = "somentesenha";
+$datebase   = "projetoeletro";
+
+$conn = mysqli_connect($servername, $username, $password, $datebase);
+
+if (!$conn){
+    die("A conexão falhou".mysqli_connect_error());
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,6 +24,9 @@
 </head>
 
 <body class="corpo">
+
+
+
     <header class="cabecalho-principal">
             <div class="primeiro-cabecalho">
                 <div class="logo">
@@ -22,10 +41,10 @@
         <div class="header2">
             <nav class="menu">
                 <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="lojas.html">Lojas</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="index.php">Página Inicial</a></li>
+                    <li><a href="produtos.php">Produtos</a></li>
+                    <li><a href="lojas.php">Lojas</a></li>
+                    <li><a href="contato.php">Contato</a></li>
                 </ul>
             </nav>
             <div class="pesquisa">
@@ -34,36 +53,21 @@
             </div>
     </div>
     <main>
-    <div class="contato">
-        <div id="gmail">
-            <img src="./img/gmaillogo.png" alt="logo do email" width="15%">
-            <br>
-            <p>eletro@gmail.com</p>
-        </div>
-        <div id="wpp">
-            <img src="./img/wpplogo.png" alt="logo do whatsapp" width="30%">
-            <br>
-            <p>(11) 4444-4444</p>
-        </div>
-    <div class="formulario">
-        <form>
-            <h4>Nome: </h4>
-            <input class="nome" type="text">
-            <h4>Mensagem: </h4>
-            <textarea class="textarea"></textarea>
-            <input id="submit" type="submit" value="enviar">
-        </form>
-    </div>
-    </div> 
+        <div id="txtinicial">
+        <p id="txt">Eletrô surgiu em 2049 para trazer aos amantes da nostalgia um gostinho das tecnologias de décadas passadas.<br>
+
+            Inspirados nas tecnologias mais revolucionárias de sua época, trazemos ao público mais saudosista uma experência que transcende o tempo!
+            </p>
+        <div>
     </main>
-<br><br><br><br>
-<br><br><br><br>
+
+    <br><br><br><br><br><br><br><br>
 <footer id="rodape">
     <p id="formas_pagamento"><b>Formas de pagamento:</b></p>
     <img src="https://cdn.awsli.com.br/740/740718/arquivos/logos-forma-pagamento.png" 
     alt="Formas de pagamento" height="20%" width="20%">
     <p>© Eletrô</p>
-</footer>   
+</footer>
 </body>
 
 </html>

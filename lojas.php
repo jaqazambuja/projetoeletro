@@ -1,3 +1,17 @@
+<?php
+
+$servername = "Localhost";
+$username   = "root";
+$password   = "somentesenha";
+$datebase   = "projetoeletro";
+
+$conn = mysqli_connect($servername, $username, $password, $datebase);
+
+if (!$conn){
+    die("A conexão falhou".mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,10 +24,10 @@
     <header class="cabecalho-principal">
             <div class="primeiro-cabecalho">
                 <div class="logo">
-                    <a href="index.html"><img src="./img/eletro_logo.png" alt="logo loja eletrô" height="80px"></a>
+                    <a href="index.php"><img src="./img/eletro_logo.png" alt="logo loja eletrô" height="80px"></a>
                 </div>
                 <div class="redes-sociais">
-                    <a href="contato.html"><img src="./img/redes_sociais.png" alt="logos das redes sociais" height="60px"></a>
+                    <a href="contato.php"><img src="./img/redes_sociais.png" alt="logos das redes sociais" height="60px"></a>
                 </div>
             </div>
     </header>
@@ -21,10 +35,10 @@
         <div class="header2">
             <nav class="menu">
                 <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="lojas.html">Lojas</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="index.php">Página Inicial</a></li>
+                    <li><a href="produtos.php">Produtos</a></li>
+                    <li><a href="lojas.php">Lojas</a></li>
+                    <li><a href="contato.php">Contato</a></li>
                 </ul>
             </nav>
             <div class="pesquisa">
