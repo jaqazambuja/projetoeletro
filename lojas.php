@@ -17,35 +17,17 @@ if (!$conn){
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Eletrô</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/loja.css">
 </head>
-<body class="corpo">
-    <header class="cabecalho-principal">
-            <div class="primeiro-cabecalho">
-                <div class="logo">
-                    <a href="index.php"><img src="./img/eletro_logo.png" alt="logo loja eletrô" height="80px"></a>
-                </div>
-                <div class="redes-sociais">
-                    <a href="contato.php"><img src="./img/redes_sociais.png" alt="logos das redes sociais" height="60px"></a>
-                </div>
-            </div>
-    </header>
-    <div class="menu_busca">
-        <div class="header2">
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.php">Página Inicial</a></li>
-                    <li><a href="produtos.php">Produtos</a></li>
-                    <li><a href="lojas.php">Lojas</a></li>
-                    <li><a href="contato.php">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="pesquisa">
-                <input placeholder="Pesquise aqui" type="text">
-            </div>
-            </div>
-    </div>
+    <body>
+    <?php
+include('menubusca.html')
+
+    ?>
+            
+<br><br><br>
 <main>
 <div class="lugares">
     <div class="rjspsc">

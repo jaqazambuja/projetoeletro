@@ -1,0 +1,123 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #672369; 
+}
+.container-fluid{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 30%;
+    height: 80px;
+    float: left;
+    background-color: #eead2d;
+}
+
+ul {
+    padding: 0px!important;
+}
+
+.logo {
+    float: left;
+    width: 80%;
+}
+
+.redes-sociais {
+    float: right;
+    width: 10%;
+}
+
+.header2 {
+    width: 980px; 
+    margin: 0 auto;
+    height: 50px;
+    padding: 16px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 15px;
+    height: 50px;
+}
+
+.menu ul li:hover{
+
+    border-bottom: 1px solid #37aebd;
+}
+
+menu ul li a:hover {
+    color: #37aebd;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.menu {
+    width: 70%;
+    float: left;
+}
+
+.pesquisa {
+    width: 30%;
+    float: right;
+    margin-top: 13px;
+    text-align: center;
+}
+
+.pesquisa input {
+    height: 25px;
+    width: 190px;
+    background-color: white;
+    background-image: url('../img/lupa.png.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    background-size: 20px;
+}
+.apresent {
+	margin-top: 5%;
+
+}
+
+.lugares {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.rjspsc {
+    display: inline-block;
+    padding: 30px;
+    width: 20%;
+    margin-top: 30px;
+    color: white;
+}
+
+.contato {
+width: 100%;
+display: inline-block;
+
+}
+
+#gmail {
+    width: 40%;
+    display: inline-block;
+    margin-left: 100px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+#wpp {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+

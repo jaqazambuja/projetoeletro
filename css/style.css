@@ -1,3 +1,11 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #672369;
+}
+
+
 .corpo {
     width: 100%;
     height: 100%;
@@ -7,12 +15,12 @@
 ul {
     padding: 0px!important;
 }
-.cabecalho-principal {
+.container-fluid {
     background-color: #eead2d;
     width: 100%;
     height: 70px;
 }
-.primeiro-cabecalho {
+.container {
     background-color: #eead2d;
     width: 980px;
     height: 60px;    
@@ -21,7 +29,7 @@ ul {
 }
 .logo {
     float: left;
-    width: 80%;
+    width: 30%;
 }
 
 .redes-sociais {
@@ -117,6 +125,11 @@ ul {
     color: white;
 }
 
+.precode {
+    color: #eead2d;
+}
+
+
 .preco {
     color: #eead2d;
 }
@@ -124,10 +137,7 @@ ul {
 #txtinicial {
     text-align: center;
     width: 40%;
-    display: block;
-    margin-left: 30%;
-    margin-top: 5%;
-
+   
 }
 
 #txt {
@@ -206,6 +216,8 @@ display: inline-block;
 #formas_pagamento {
     color: white;
 }
+
+
 
 
 

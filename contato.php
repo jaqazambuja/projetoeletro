@@ -32,70 +32,48 @@ if(isset($_POST['nome'])&& isset($_POST['idade'])&& isset($_POST['email'])&& iss
     <meta charset="UTF-8">
     <title>Eletrô</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
 <body class="corpo">
-    <header class="cabecalho-principal">
-            <div class="primeiro-cabecalho">
-                <div class="logo">
-                    <a href="index.php"><img src="./img/eletro_logo.png" alt="logo loja eletrô" height="80px"></a>
-                </div>
-                <div class="redes-sociais">
-                    <a href="contato.php"><img src="./img/redes_sociais.png" alt="logos das redes sociais" height="60px"></a>
-                </div>
+    <?php
+include('menubusca.html')
+
+    ?>
+    <br><br><br><br>
+   <div style="width: 30%">
+        <form method="post" name='infos' action="">
+        <div class="form-group">
+            <label type="text" for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome aqui" class="form-control" required><br>
+        </div>
+        <div class="form-group">
+            <label type="number" for="idade">Idade: </label>
+            <input type="number" name="idade" id="idade" placeholder="Sua idade aqui" class="form-control" required><br>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail: </label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Seu email" required> <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguem.</small><br>
+        </div>
+        <div class="form-group"> 
+            <label for="masculino">Masculino</label></td>
+            <input type="radio" name="genero" id="masculino" value="masculino"></td>
+        </div>
+        <div class="form-group">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="feminino" value="feminino">
+        </div>
+        <div class="form-group">
+            <label for="outro">Outro</label>
+            <input type="radio" name="genero" id="outro" value="outro">
+        </div>
+            <div class="form-group">
+                <label for="Mensagem">Mensagem: </label>
             </div>
-    </header>
-    <div class="menu_busca">
-        <div class="header2">
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.php">Página Inicial</a></li>
-                    <li><a href="produtos.php">Produtos</a></li>
-                    <li><a href="lojas.php">Lojas</a></li>
-                    <li><a href="contato.php">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="pesquisa">
-                <input placeholder="Pesquise aqui" type="text">
-            </div>
-            </div>
-    </div>
-    <main>
-    <center>
-   <table>
-       <form method="post" name='infos' action="">
-        <tr>
-            <td><label type="text" for="nome">Nome: </label></td>
-            <td><input type="text" name="nome" id="nome" required><br></td>
-        </tr>
-        <tr>
-            <td><label type="number" for="idade">Idade: </label></td>
-            <td><input type="number" name="idade" id="idade" required><br></td>
-        </tr>
-        <tr>
-            <td><label for="email">E-mail: </label></td>
-            <td><input type="email" name="email" id="email" required><br></td>
-        </tr>
-        <tr>
-            <td><label for="masculino">Masculino</label></td>
-            <td><input type="radio" name="genero" id="masculino" value="masculino"></td>
-        </tr>
-        <tr>
-            <td><label for="feminino">Feminino</label></td>
-            <td><input type="radio" name="genero" id="feminino" value="feminino"></td>
-        </tr>
-        <tr>
-            <td><label for="outro">Outro</label></td>
-            <td><input type="radio" name="genero" id="outro" value="outro"></td>
-        </tr>
-        <tr>
-            <td><label for="Mensagem">Mensagem: </label></td>
-            <td><textarea name="Mensagem" id="descricao" cols="30" rows="10" required></textarea></td>
-            <td><button type="submit" name="submit" value="Enviar">Enviar</button></td>
-        </tr>
-       </form>
-   </table>
-    </main>
+            <div class="form-group"><textarea name="Mensagem" id="descricao" cols="30" rows="10" required></textarea></div>
+            <button type="submit" name="submit" value="Enviar" class="btn btn-primary btn-lg">Enviar</button>
+   </form>
+</div>
 <br><br><br><br>
 <br><br><br><br>
 <footer id="rodape">
